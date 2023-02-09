@@ -13,7 +13,7 @@ const [data , setData] = useState([{
 }])
 
 useEffect(()=>{
-axios.get("http://cap-it-all.onrender.com/static/data/").then((resp)=>{
+axios.get("https://cap-it-all.onrender.com/static/data/").then((resp)=>{
 if(resp.status == 200){
   setData(resp.data)
 }

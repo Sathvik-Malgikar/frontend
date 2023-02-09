@@ -7,7 +7,7 @@ function submit(event){
 event.preventDefault()
 let country = document.getElementById("country").value
 let capital = document.getElementById("capital").value
-axios.post("http://cap-it-all.onrender.com/newentry/" , { country , capital } )
+axios.post("https://cap-it-all.onrender.com/newentry/" , { country , capital } )
 
 }
 

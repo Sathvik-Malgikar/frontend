@@ -10,7 +10,7 @@ function CardsGrid({data}) {
         let pair = {country,capital}
       
 
-        return await axios.get("http://cap-it-all.onrender.com/check/",{ params :  pair}).then((resp)=>{
+        return await axios.get("https://cap-it-all.onrender.com/check/",{ params :  pair}).then((resp)=>{
           if ( resp.status == 200){
             console.log(resp.data.correct);
 
